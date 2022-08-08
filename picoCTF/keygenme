@@ -1,0 +1,9 @@
+#Made by FazeCT
+
+Step 1: Load using GDB.
+Step 2: Set breakpoint at "__libc_start_main" -> c to continue.
+Step 3: Set breakpoint at main -> c to continue. Then run "x/64i $rip".
+Step 4: Set breakpoint at 0x555555555209 -> c to continue. Then run "x/128i $rip".
+Step 5: Set breakpoint at 0x555555555414 (strlen) -> c to continue. Then run "x/s $rbp-0x30".
+
+#Remind: Set breakpoint command: break *0x........;
