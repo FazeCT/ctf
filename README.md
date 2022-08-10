@@ -1,3 +1,3 @@
 # ctf
-CTF Write-Ups from multiple websites.
+CTF source code(s) from multiple websites.
 Made originally by FazeCT.
