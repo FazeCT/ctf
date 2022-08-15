@@ -29,3 +29,5 @@ puVar1[0x18] = 0
 
 for i in range(24):
     print(chr(puVar1[i]),end='')
+
+#Flag is: SHELLCTF{k3ygen_1s_c0oL}.
