@@ -33,3 +33,5 @@ for i in range(26):
     n = str(local_a8[i])
     print(chr(int(n)//4),end='')
 print(chr(local_a8[26]//4),end='')
+
+#Flag is: shellctf{b1tWi5e_0p3rAt0rS}
