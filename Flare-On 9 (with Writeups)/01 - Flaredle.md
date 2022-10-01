@@ -302,8 +302,8 @@ for i in range(6):
 ```
 Viết xong chạy thử 1 lần sau khi nhập string acetylphenylhydrazine thì thấy trả ra list gồm 5 string khác, trong đó có 1 string khá sus là flareonisallaboutcats, submit thử thì đúng luôn :))
 
-![List](/home/fazect/ctf/Flare-On 9 (with Writeups)/Images/image_2022-10-01_094719698.png)
+![List](/../Images/image_2022-10-01_094719698.png)
 
-![Result](/home/fazect/ctf/Flare-On 9 (with Writeups)/Images/image_2022-10-01_094719698.png)
+![Result](/../Images/image_2022-10-01_094719698.png)
 
 > Flag is: flareonisallaboutcats@flare-on.com
