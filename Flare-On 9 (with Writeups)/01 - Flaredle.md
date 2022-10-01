@@ -303,9 +303,10 @@ for i in range(6):
     wordlist = process(y, g, idx, wordlist)
 ```
 Viết xong chạy thử 1 lần sau khi nhập string acetylphenylhydrazine thì thấy trả ra list gồm 5 string khác, trong đó có 1 string khá sus là flareonisallaboutcats, submit thử thì đúng luôn :))
-
+<p align="center">
 ![List](Images/image_2022-10-01_094719698.png)
-
+</p>
+<p align="center">
 ![Result](Images/image_2022-10-01_094725006.png)
-
+</p>
 > Flag is: flar<span>eonisallaboutcats@flar</span>e-on.com
