@@ -304,6 +304,6 @@ Viết xong chạy thử 1 lần sau khi nhập string acetylphenylhydrazine th�
 
 ![List](Images/image_2022-10-01_094719698.png)
 
-![Result](Images/image_2022-10-01_094719698.png)
+![Result](Images/image_2022-10-01_094725006.png)
 
 > Flag is: flareonisallaboutcats@flare-on.com
