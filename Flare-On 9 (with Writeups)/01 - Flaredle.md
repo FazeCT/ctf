@@ -302,8 +302,8 @@ for i in range(6):
 ```
 Viết xong chạy thử 1 lần sau khi nhập string acetylphenylhydrazine thì thấy trả ra list gồm 5 string khác, trong đó có 1 string khá sus là flareonisallaboutcats, submit thử thì đúng luôn :))
 
-![List](https://myoctocat.com/assets/images/base-octocat.svg)
+![List](ctf/Flare-On 9 (with Writeups)/Images/image_2022-10-01_094719698.png)
 
-![Result](https://myoctocat.com/assets/images/base-octocat.svg)
+![Result](ctf/Flare-On 9 (with Writeups)/Images/image_2022-10-01_094719698.png)
 
 > Flag is: flareonisallaboutcats@flare-on.com
