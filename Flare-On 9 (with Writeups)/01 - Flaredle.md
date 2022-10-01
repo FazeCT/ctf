@@ -2,7 +2,7 @@
 ## _01 - Flaredle_
 
 ## Information
-**Category:** | **Points:** | **Writeup Author**
+**Category** | **Points** | **Writeup Author**
 --- | --- | ---
 Reverse Engineering | 1 | FazeCT
 
