@@ -98,7 +98,7 @@ function checkGuess () {
     }
 }
 ```
-~~Trông có vẻ như không thể reverse được để tìm rightGuessString~~<sub>Update bên dưới</sub>, tuy nhiên nhận thấy đây là format giống trò chơi wordle bình thường, nghĩa là sau mỗi lần dự đoán, ký tự tại từng vị trí nếu nằm đúng vị trí so với đáp án thì sẽ hiện màu xanh, còn chỉ nằm trong đáp án mà không đúng chỗ sẽ hiện màu vàng.
+~~Trông có vẻ như không thể reverse được để tìm rightGuessString~~ <sub>(Updated)</sub> , tuy nhiên nhận thấy đây là format giống trò chơi wordle bình thường, nghĩa là sau mỗi lần dự đoán, ký tự tại từng vị trí nếu nằm đúng vị trí so với đáp án thì sẽ hiện màu xanh, còn chỉ nằm trong đáp án mà không đúng chỗ sẽ hiện màu vàng.
 
 **Update: Sau khi pass được challenge này, mình đọc lại thì nhận thấy source code có cho rightGuessString nằm ở index 57 của list, mà đó lại là string nằm ngay trên flareonisallaboutcats (là establishmentarianism). Nên source dưới có thể xem như không cần thiết hoặc cần khi đáp án đúng không được cho sẵn trong source code.**
 
