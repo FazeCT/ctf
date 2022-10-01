@@ -45,5 +45,5 @@ Quay trở lại với hàm **sub_401040()** - nơi result được trả về, 
 
 Từ đó ta có được tọa độ của vị trí cần click trong .exe để pass Challenge này.
 
-> Flag is: "w1nN3r_W!NneR_cHick3n_d1nNer@flare-on.com"
+> Flag is: "w1nN3r_W<span>!NneR_cHick3n_d1nNer@fla</span>re-on.com"
 
