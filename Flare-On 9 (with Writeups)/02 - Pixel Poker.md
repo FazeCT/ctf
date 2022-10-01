@@ -26,7 +26,7 @@ Tiếp tục thấy trong hàm **wWinMain()**, trước khi result được tín
 
 ![401120](Images/image_2022-10-01_162043280.png)
 
-Ta kiểm tra hàm **sub_401120()**, nhận thấy chương trình đang khởi tạo một class, trong đó đáng chú ý là attribute lpfnWndProc tiếp tục là giá trị được trả về từ hàm **sub_4012C0**.
+Ta kiểm tra hàm **sub_401120()**, nhận thấy chương trình đang khởi tạo một class, trong đó đáng chú ý là attribute **lpfnWndProc** tiếp tục là giá trị được trả về từ hàm **sub_4012C0**.
 
 ![4012C0](Images/image_2022-10-01_162101597.png)
 
