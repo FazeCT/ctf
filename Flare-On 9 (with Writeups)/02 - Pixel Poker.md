@@ -37,7 +37,7 @@ Trong hàm **sub_4012C0**, các thuộc tính của chương trình được th�
 **lParam** và **SHIWORD(lParam)** chính là 2 giá trị ~~có lẽ~~ chúng ta cần tìm để giải được Challenge này.
 Tiếp tục kiểm tra xuống dưới ta thấy có 2 điều kiện được kiểm tra:
 
-> (__int16)lParam == dword_412004 % (unsigned int)cxval 
+> (__int16)lParam == dword_412004 % (unsigned int)cxval   
 > SHIWORD(lParam) == dword_412008 % (unsigned int)cyval
 
 Trong đó dword_412004 có giá trị bằng 0x52414C46 và dword_412008 có giá trị bằng 0x6E4F2D45.
