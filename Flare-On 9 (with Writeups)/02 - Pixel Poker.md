@@ -40,7 +40,7 @@ Tiếp tục kiểm tra xuống dưới ta thấy có 2 điều kiện được 
 > (__int16)lParam == dword_412004 % (unsigned int)cxval   
 > SHIWORD(lParam) == dword_412008 % (unsigned int)cyval
 
-Trong đó dword_412004 có giá trị bằng 0x52414C46 và dword_412008 có giá trị bằng 0x6E4F2D45.
+Trong đó **dword_412004** có giá trị bằng **0x52414C46** và **dword_412008** có giá trị bằng **0x6E4F2D45**.
 Vậy, việc còn lại chỉ là tìm kiếm **cxval** và **cyval**.
 
 Quay trở lại với hàm **sub_401040()** - nơi result được trả về, ta có thể thực hiện kỹ thuật debugging để có được giá trị của **cxval** và **cyval** lần lượt là **741** và **641**.
@@ -48,6 +48,13 @@ Quay trở lại với hàm **sub_401040()** - nơi result được trả về, 
 ![401040](Images/image_2022-10-01_162015754.png)
 
 Từ đó ta có được tọa độ của vị trí cần click trong .exe để pass Challenge này.
+```
+data = 0x52414C46
+data1 = 0x6E4F2D45
+print(int(str(data)) % 741)
+print(int(str(data1)) % 641)
+#(95, 313)
+```
 
 ![win](image_2022-10-01_162128693.png)
 
