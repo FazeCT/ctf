@@ -56,7 +56,7 @@ print(int(str(data1)) % 641)
 #(95, 313)
 ```
 
-![win](image_2022-10-01_162128693.png)
+![win](Images/image_2022-10-01_162128693.png)
 
 > Flag is: w1nN3r_W<span>!NneR_cHick3n_d1nNer@fla</span>re-on.com
 
