@@ -14,8 +14,6 @@ You probably won't win. Maybe you're like us and spent the year playing Wordle. 
 
 Play it live at: http://flare-on.com/flaredle/
 
-7-zip password: flare
-
 ## Solution
 Đầu tiên, từ source 7z, unzip thu được được 2 file .js và 1 file .css, ta mở lên xem thử thì thấy:
 - File word.js chứa kha khá từ, chắc là word cần sử dụng cho challenge này.
