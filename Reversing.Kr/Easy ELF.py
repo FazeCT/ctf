@@ -1,0 +1,5 @@
+print(chr(52 ^ 120),end='')
+print(chr(49),end='')
+print(chr(50 ^ 124),end='')
+print(bytes.fromhex(hex(136 ^ -35 & (2**8-1))[2:]).decode('utf-8'),end='')
+print(chr(88),end='')
