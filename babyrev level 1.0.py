@@ -1,2 +1,0 @@
-data = [0x6f ,0x61 ,0x70 ,0x75 ,0x73]
-for c in data: print(chr(int(str(c))),end='')
