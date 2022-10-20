@@ -28,4 +28,4 @@ Viết xong chạy thử 1 lần sau khi nhập string acetylphenylhydrazine th�
 
 ![Result](Images/image_2022-10-01_094725006.png)
 
-> Flag is: U_cRackeD_th1$<span>_<span>maG<span>1cBa</span>LL</span>_!!_@flar</span>e-on.com
+> Flag is: U_cRackeD_th1<span>$<span>_maG1cBaLL</span>_!!_@flar</span>e-on.com
