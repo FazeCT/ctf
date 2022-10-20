@@ -13,17 +13,17 @@ You got a question? Ask the 8 ball!
 ## Solution
 Đầu tiên, mở thử .exe lên thì thấy giao diện cho phép nhập vào một chuỗi, đồng thời có thể bấm các nút mũi tên để lắc quả bóng. Sau khi nhập chuỗi và bấm Enter, sẽ trả ra "lời nói" từ quả bóng.
 
-Decompile bằng IDA ra thử, đọc sơ qua các hàm thì thấy có hàm WinMain(), bấm vào thì thấy nó return sub_403690().
-Trong hàm sub_403690(), hàm sub_4027A0() được gọi, đây chính là main của .exe.
+Decompile bằng IDA ra thử, đọc sơ qua các hàm thì thấy có hàm **WinMain()**, bấm vào thì thấy nó return **sub_403690()**.
+Trong hàm **sub_403690()**, hàm **sub_4027A0()** được gọi, đây chính là main của .exe.
 
-Lần lượt kiểm tra các lời gọi hàm khác từ hàm này, ta thấy có một số hàm như sub_4012B0() (là hàm chứa các "lời nói" của quả bóng), sub_402090() (hàm này khá sus vì có chứa chuỗi liên quan đến flag, đó là "gimme flag pls?" ở this + 92, và input từ user được lưu vào this + 248.
+Lần lượt kiểm tra các lời gọi hàm khác từ hàm này, ta thấy có một số hàm như sub_4012B0() (là hàm chứa các "lời nói" của quả bóng), **sub_402090()** (hàm này khá sus vì có chứa chuỗi liên quan đến flag, đó là **"gimme flag pls?"** ở **this + 92**, và input từ user được lưu vào **this + 248**.
 ```
 strcpy(this + 92, "gimme flag pls?");
 ...
 sub_4018F0(this + 224, "Start typing your question (max. 75 characters): ", 0x31u);
 sub_4018F0(this + 248, &unk_40426C, 0);
 ```
-Tiếp tục, ta thấy có 3 hàm được gọi tiếp đó là sub_401E50(), sub_4024E0() và sub_4022A0(). Trong đó, mình nhận thấy hàm sub_4024E0() có tiềm năng giúp pass challenge này nhất, vì trong đó lồng khá nhiều điều kiện if kiểm tra.
+Tiếp tục, ta thấy có 3 hàm được gọi tiếp đó là **sub_401E50()**, **sub_4024E0()** và **sub_4022A0()**. Trong đó, mình nhận thấy hàm **sub_4024E0()** có tiềm năng giúp pass challenge này nhất, vì trong đó lồng khá nhiều điều kiện if kiểm tra.
 ```
 if ( v3 && *(_BYTE *)dword_406090 )
   {
@@ -41,7 +41,7 @@ if ( v3 && *(_BYTE *)dword_406090 )
     while ( *(_BYTE *)dword_406090 );
   }
 ```
-Đi vào hàm sub_4024E0(), ở đoạn có nhiều điều kiện được lồng vào như đã nói trên, ta nhận thấy các char được so sánh chỉ bao gồm 'L', 'R', 'U', 'D', vừa hay đây cũng là 4 hướng mũi tên Left, Right, Up, Down. Nếu điều kiện thỏa, chương trình sẽ thực hiện so sánh v22 (= this + 248) và this + 92.
+Đi vào hàm **sub_4024E0()**, ở đoạn có nhiều điều kiện được lồng vào như đã nói trên, ta nhận thấy các char được so sánh chỉ bao gồm 'L', 'R', 'U', 'D', vừa hay đây cũng là 4 hướng mũi tên Left, Right, Up, Down. Nếu điều kiện thỏa, chương trình sẽ thực hiện so sánh **v22 (= this + 248)** và **this + 92**.
 ```
 if ( *(_BYTE *)(this + 345) )
   {
@@ -110,7 +110,7 @@ if ( *(_BYTE *)(this + 345) )
     }
   }
 ```
-Tại điểm này, cùng với việc đã có được this + 92 từ trước ("gimme flag pls?") và biết được this + 248 là input từ user, mình cũng phần nào đoán được cách crack được .exe này, đó là nhập vào chuỗi "gimme flag pls?", đồng thời bấm các nút mũi tên đúng theo thứ tự điều kiện if ("LLURULDUL").
+Tại điểm này, cùng với việc đã có được **this + 92** từ trước **("gimme flag pls?")** và biết được **this + 248** là input từ user, mình cũng phần nào đoán được cách crack được .exe này, đó là nhập vào chuỗi **"gimme flag pls?"**, đồng thời bấm các nút mũi tên đúng theo thứ tự điều kiện if **("LLURULDUL")**.
 
 
 
