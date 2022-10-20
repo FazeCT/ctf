@@ -20,9 +20,8 @@ Play it live at: http://flare-on.com/flaredle/
 - File script.js chứa source của checker.
 
 Đọc qua source script.js ta thấy số lần dự đoán tối đa là 6, nên chắc chắn ko thể brute tất cả trong 1 lần chơi.
-Bỏ qua các hàm khởi tạo, ta bước thẳng vào checkGuess()
 
-Nhận thấy source code có cho rightGuessString nằm ở index 57 của list, chính là flareonisallaboutcats, submit thử thì đúng luôn :))
+Bỏ qua các hàm khởi tạo, ta bước thẳng vào checkGuess(). Nhận thấy source code có cho rightGuessString nằm ở index 57 của list, chính là flareonisallaboutcats, submit thử thì đúng luôn :))
 
 ![Result](Images/image_2022-10-01_094725006.png)
 
