@@ -122,6 +122,6 @@ if ( *(_BYTE *)(this + 345) )
 ```
 Tại điểm này, cùng với việc đã có được **this + 92** từ trước **("gimme flag pls?")** và biết được **this + 248** là input từ user, mình cũng phần nào đoán được cách crack được .exe này, đó là nhập vào chuỗi **"gimme flag pls?"**, đồng thời bấm các nút mũi tên đúng theo thứ tự điều kiện if **("LLURULDUL")**.
 
-![Result](Images/win.png)
+![Result](Images/flag.png)
 
 > Flag is: U\_cR<span>ackeD\_th1$\_maG1cBaLL\_!!\_@flar</span>e-on.com
