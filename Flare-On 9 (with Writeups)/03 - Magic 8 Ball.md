@@ -13,7 +13,7 @@ You got a question? Ask the 8 ball!
 ## Solution
 Đầu tiên, mở thử .exe lên thì thấy giao diện cho phép nhập vào một chuỗi, đồng thời có thể bấm các nút mũi tên để lắc quả bóng. Sau khi nhập chuỗi và bấm Enter, sẽ trả ra "lời nói" từ quả bóng.
 
-![Test](Images/test.png)
+![Test](Images/run.png)
 
 Decompile bằng IDA ra thử, đọc sơ qua các hàm thì thấy có hàm **WinMain()**, bấm vào thì thấy nó return **sub_403690()**.
 Trong hàm **sub_403690()**, hàm **sub_4027A0()** được gọi, đây chính là main của .exe.
