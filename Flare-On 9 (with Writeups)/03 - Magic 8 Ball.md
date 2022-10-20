@@ -13,9 +13,19 @@ You got a question? Ask the 8 ball!
 ## Solution
 Đầu tiên, mở thử .exe lên thì thấy giao diện cho phép nhập vào một chuỗi, đồng thời có thể bấm các nút mũi tên để lắc quả bóng. Sau khi nhập chuỗi và bấm Enter, sẽ trả ra "lời nói" từ quả bóng.
 
+![Test](Images/test.png)
+
 Decompile bằng IDA ra thử, đọc sơ qua các hàm thì thấy có hàm **WinMain()**, bấm vào thì thấy nó return **sub_403690()**.
 Trong hàm **sub_403690()**, hàm **sub_4027A0()** được gọi, đây chính là main của .exe.
-
+```
+int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
+{
+  return sub_403690();
+}
+```
+```
+for ( i = sub_4027A0(pNumArgs, v4); v11 < pNumArgs; ++v11 )
+```
 Lần lượt kiểm tra các lời gọi hàm khác từ hàm này, ta thấy có một số hàm như **sub_4012B0()** (là hàm chứa các "lời nói" của quả bóng), **sub_402090()** (hàm này khá sus vì có chứa chuỗi liên quan đến flag, đó là **"gimme flag pls?"** ở **this + 92**, và input từ user được lưu vào **this + 248**.
 ```
 strcpy(this + 92, "gimme flag pls?");
@@ -112,12 +122,6 @@ if ( *(_BYTE *)(this + 345) )
 ```
 Tại điểm này, cùng với việc đã có được **this + 92** từ trước **("gimme flag pls?")** và biết được **this + 248** là input từ user, mình cũng phần nào đoán được cách crack được .exe này, đó là nhập vào chuỗi **"gimme flag pls?"**, đồng thời bấm các nút mũi tên đúng theo thứ tự điều kiện if **("LLURULDUL")**.
 
-
-
-
-
-![List](Images/image_2022-10-01_094719698.png)
-
-![Result](Images/image_2022-10-01_094725006.png)
+![Result](Images/win.png)
 
 > Flag is: U\_cR<span>ackeD\_th1$\_maG1cBaLL\_!!\_@flar</span>e-on.com
