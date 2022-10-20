@@ -16,7 +16,7 @@ You got a question? Ask the 8 ball!
 Decompile bằng IDA ra thử, đọc sơ qua các hàm thì thấy có hàm **WinMain()**, bấm vào thì thấy nó return **sub_403690()**.
 Trong hàm **sub_403690()**, hàm **sub_4027A0()** được gọi, đây chính là main của .exe.
 
-Lần lượt kiểm tra các lời gọi hàm khác từ hàm này, ta thấy có một số hàm như sub_4012B0() (là hàm chứa các "lời nói" của quả bóng), **sub_402090()** (hàm này khá sus vì có chứa chuỗi liên quan đến flag, đó là **"gimme flag pls?"** ở **this + 92**, và input từ user được lưu vào **this + 248**.
+Lần lượt kiểm tra các lời gọi hàm khác từ hàm này, ta thấy có một số hàm như **sub_4012B0()** (là hàm chứa các "lời nói" của quả bóng), **sub_402090()** (hàm này khá sus vì có chứa chuỗi liên quan đến flag, đó là **"gimme flag pls?"** ở **this + 92**, và input từ user được lưu vào **this + 248**.
 ```
 strcpy(this + 92, "gimme flag pls?");
 ...
