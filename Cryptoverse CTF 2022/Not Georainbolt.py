@@ -14,11 +14,9 @@ for i in range(50):
     if txt[0] == 'C':
         x = txt.split()
         x[3] = x[3][0:len(x[3])-1]
-        Latitude = x[3]
-        Longitude = x[4]
-        location = geolocator.reverse(Latitude + "," + Longitude)
-        address = location.raw['address']
-        city = address.get('city', '')
+        location = geolocator.reverse(x[3] + "," + x[4])
+        addr = location.raw['address']
+        city = addr.get('city', '')
         print(city)
         p.sendline(city)
     else:
