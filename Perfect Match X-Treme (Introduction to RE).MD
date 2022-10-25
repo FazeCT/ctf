@@ -66,9 +66,9 @@ public void IncreaseRound()
 	this.isGameOver = true;
 }
 ```
-Thử edit class để bỏ dòng lệnh **this.isGameOver = true;** lên trên đầu class, tức ngay trong **void Awake()**. Cách thức edit class đã được mình hướng dẫn trong slide phía trên.
+Thử edit module để bỏ dòng lệnh **this.isGameOver = true;** lên trên đầu class, tức ngay trong **void Awake()**. Cách thức **edit class/module** đã được mình hướng dẫn trong slide phía trên.
 
-**Lưu ý:** Trong quá trình edit class, nếu các bạn gặp một vài lỗi compile như mình thì có thể xóa từng dòng bị lỗi đó, vì mục tiêu của mình là chỉ chạy đến **void Awake()** là đã kết thúc chương trình (tuy vậy nhưng không nên xóa lố, có thể bị not responding ở cái .exe).
+**Lưu ý:** Không nên dùng **edit class** để edit, mà dùng **edit module**. Nếu dùng edit class sẽ xảy ra lỗi compile ở các module khác (vì pseudocode được decompile lại thường không đúng hoàn toàn 100% như bản gốc nên sẽ xảy ra thiếu hụt dữ liệu dẫn đến lỗi.
 
 (Insert dnspy4)
 
@@ -79,4 +79,25 @@ Sau khi compile xong, ta tiến hành save module, lưu đè lên file **.dll** 
 Tiếp tục bật game lên chơi thử thôi...
 
 (Insert clip chơi thử part 2)
-> Flag is: ...
+
+Tới đây, công đoạn crack cũng gần như xong rồi, chỉ còn tìm cách đọc flag. Ở đây theo mình thì có 2 lựa chọn, một là tìm cách xóa object để đọc flag, hai (cách này hơi unintended) là chỉnh tốc độ và bước nhảy của nhân vật để đọc flag từ các góc khác nhau. Mình đã phá cách và chọn hướng thứ 2.
+
+(Insert dnspy6)
+
+Trong số các **GameObject**, ta có **MoveBehaviour**, trong đó có hàm **MoveBehaviour()** chứa các thông tin của nhân vật. Mình đã chỉnh một số thông số như hình dưới đây:
+
+(Insert dnspy7)
+
+Save module, vào game, canh thời gian nhảy xuống để vừa kịp nhìn flag từ dưới lên mà không bị eliminated do vượt quá độ sâu thấp nhất cho phép.
+
+(Insert flag1,flag2,flag3)
+
+> Flag: SEKAI{F4LL_GUY5_H3CK_15_1LL3G4L}
+
+## Conclusion
+
+Trên đây là Write-Up về một bài Unity RE khá thú vị, kiểu challenge như này thường ít thấy (từ lúc mình chơi trong BKISC tới giờ thì số lần gặp chắc đếm trên đầu ngón tay) nhưng mỗi lần gặp một bài Unity đều làm cho mình cảm thấy thán phục về sự đầu tư của các organizers cho các challenge RE.
+
+Cuối cùng, mình hy vọng qua bài viết trên đây của mình thì hy vọng các bạn (đặc biệt là các bạn sắp tới có dự định theo mảng RE) có một góc nhìn tổng quan về cách thức giải quyết một vấn đề trong mảng Reverse Engineering.
+
+#**YOUR SECURITY, OUR PASSION - BKISC**
