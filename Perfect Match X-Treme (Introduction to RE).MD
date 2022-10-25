@@ -52,7 +52,9 @@ Toàn bộ phần màu xanh chính là các **GameObject** mà mình đã đề 
 ![Files](PMXTResources/dnspy3.png)
 
 Trên đây là cấu trúc của **GameManager** được decompile thành pseudocode của ngôn ngữ **C#**. Mỗi hàm của **GameManager** đều có một chức năng riêng, như 
-**ChooseBasedOnRound()** là hàm để setup mỗi round, hay **ChooseFruit()** cũng là một hàm để setup platform của màn chơi. Tuy nhiên, ta nhận thấy có một hàm tên là **IncreaseRound()** dùng để kiểm tra tiến độ game mà trong đó ta thấy dòng lệnh **isGameOver = true;**, đây có thể hiểu là câu lệnh dùng để kết thúc game.
+**ChooseBasedOnRound()** là hàm để setup mỗi round, hay **ChooseFruit()** cũng là một hàm để setup platform của màn chơi. 
+
+Đáng chú ý hơn cả, ta nhận thấy có một hàm tên là **IncreaseRound()** dùng để kiểm tra tiến độ game mà trong đó ta thấy dòng lệnh **isGameOver = true;**, đây có thể hiểu là câu lệnh dùng để kết thúc game.
 
 ```
 public void IncreaseRound()
