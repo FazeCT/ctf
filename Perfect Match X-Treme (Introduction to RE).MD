@@ -68,7 +68,7 @@ public void IncreaseRound()
 ```
 Thử edit class để bỏ dòng lệnh **this.isGameOver = true;** lên trên đầu class, tức ngay trong **void Awake()**. Cách thức edit class đã được mình hướng dẫn trong slide phía trên.
 
-**Lưu ý:** Trong quá trình edit class, nếu các bạn gặp một vài lỗi compile như mình thì có thể vứt luôn đoạn code bị lỗi đó, vì mục tiêu của mình là chỉ chạy đến **void Awake()** là đã kết thúc chương trình.
+**Lưu ý:** Trong quá trình edit class, nếu các bạn gặp một vài lỗi compile như mình thì có thể xóa từng dòng bị lỗi đó, vì mục tiêu của mình là chỉ chạy đến **void Awake()** là đã kết thúc chương trình.
 
 (Insert dnspy4)
 
