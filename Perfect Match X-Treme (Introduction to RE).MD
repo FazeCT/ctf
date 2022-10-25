@@ -93,7 +93,9 @@ Trong số các **GameObject**, ta có **MoveBehaviour**, trong đó có hàm **
 Save module, vào game, canh thời gian nhảy xuống để vừa kịp nhìn flag từ dưới lên mà không bị eliminated do vượt quá độ sâu thấp nhất cho phép.
 
 ![Files](PMXTResources/flag1.png)
+
 ![Files](PMXTResources/flag2.png)
+
 ![Files](PMXTResources/flag3.png)
 
 > Flag: SEKAI{F4LL_GUY5_H3CK_15_1LL3G4L}
