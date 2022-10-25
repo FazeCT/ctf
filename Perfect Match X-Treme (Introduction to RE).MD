@@ -19,7 +19,7 @@ Reverse Engineering | FazeCT
 
 [...] Giành chiến thắng trong trò chơi mô phỏng lại dựa trên tựa game [Fall Guy](https://vi.wikipedia.org/wiki/Fall_Guys).
 
-(chỗ này quăng cái zip trong /PMXTResources)
+(chỗ này quăng cái link zip, pass: bkisc)
 
 ## First Observation
 
