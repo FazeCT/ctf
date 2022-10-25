@@ -76,4 +76,7 @@ Sau khi compile xong, ta tiến hành save module, lưu đè lên file **.dll** 
 
 (Insert dnspy5)
 
+Tiếp tục bật game lên chơi thử thôi...
+
+(Insert clip chơi thử part 2)
 > Flag is: ...
