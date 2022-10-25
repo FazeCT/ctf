@@ -1,28 +1,32 @@
-# __Flare-On 9__ 
-## _01 - Flaredle_
+## Introduction
+
+Lời đầu tiên, mình (FazeCT) - một thành viên của team RE trong câu lạc bộ An toàn thông tin HCMUT (BKISC) xin gửi lời chào đến các bạn đang đọc bài viết!
+
+Trong bài viết này, mình sẽ giúp các bạn hiểu được basics của mảng Reverse Engineering - RE, một trong 4 mảng chính của CTF.
+
+Trước khi vào Write-Up, mình muốn các bạn thử đọc qua slide dưới đây để nắm rõ thuật ngữ cơ bản trong RE, cũng như hiểu được một trong những dạng bài của RE, đó là Unity RE.
+
+(Insert link slide)
+
+Sau đây sẽ là Write-Up của một bài Unity RE đến từ **SEKAI CTF 2022**.
 
 ## Information
-**Category** | **Points** | **Writeup Author**
---- | --- | ---
-Reverse Engineering | 1 | FazeCT
+**Category** | **Writeup Author**
+--- | ---
+Reverse Engineering | FazeCT
 
 **Description:** 
 
-Welcome to Flare-On 9!
+(Challenge từ SEKAI CTF 2022)
+[...] Giành chiến thắng trong trò chơi mô phỏng lại dựa trên tựa game Fall Guy.
+(Insert link zip)
 
-You probably won't win. Maybe you're like us and spent the year playing Wordle. We made our own version that is too hard to beat without cheating.
+## First observation
 
-Play it live at: http://flare-on.com/flaredle/
+Để thuận tiện cho các bạn mới tìm hiểu về mảng RE, mình sẽ mở đầu bằng cách phân tích về những file trong zip.
+
 
 ## Solution
-Đầu tiên, từ source 7z, unzip thu được được 2 file .js và 1 file .css, ta mở lên xem thử thì thấy:
-- File word.js chứa kha khá từ, chắc là word cần sử dụng cho challenge này.
-- File script.js chứa source của checker.
 
-Đọc qua source script.js ta thấy số lần dự đoán tối đa là 6, nên chắc chắn ko thể brute tất cả trong 1 lần chơi.
-
-Bỏ qua các hàm khởi tạo, ta bước thẳng vào checkGuess(). Nhận thấy source code có cho rightGuessString nằm ở index 57 của list, chính là flareonisallaboutcats, submit thử thì đúng luôn :))
-
-![Result](Images/image_2022-10-01_094725006.png)
 
 > Flag is: flar<span>eonisallaboutcats@flar</span>e-on.com
