@@ -18,7 +18,9 @@ Reverse Engineering | FazeCT
 **Description:** 
 
 (Challenge từ SEKAI CTF 2022)
+
 [...] Giành chiến thắng trong trò chơi mô phỏng lại dựa trên tựa game Fall Guy.
+
 (Insert link zip)
 
 ## First observation
