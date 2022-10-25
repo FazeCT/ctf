@@ -56,15 +56,15 @@ Trên đây là cấu trúc của **GameManager** được decompile thành pseu
 
 ```
 public void IncreaseRound()
+{
+	if (this.roundNumber + 1 <= 3)
 	{
-		if (this.roundNumber + 1 <= 3)
-		{
-			this.roundNumber++;
-			base.StartCoroutine("CheckRound");
-			return;
-		} //sau khi vượt qua 3 round đấu, game sẽ kết thúc.
-		this.isGameOver = true;
-	}
+		this.roundNumber++;
+		base.StartCoroutine("CheckRound");
+		return;
+	} //sau khi vượt qua 3 round đấu, game sẽ kết thúc.
+	this.isGameOver = true;
+}
 ```
 Thử edit class để bỏ dòng lệnh **this.isGameOver = true;** lên trên đầu class, tức ngay trong **void Awake()**. Cách thức edit class đã được mình hướng dẫn trong slide phía trên.
 
