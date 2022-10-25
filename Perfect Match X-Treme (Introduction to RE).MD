@@ -27,7 +27,7 @@ Reverse Engineering | FazeCT
 
 Như đã đề cập đến trong slide phía trên, 2 folder sẽ chứa tài nguyên của game và file thực thi .exe sẽ là game chúng ta cần crack.
 
-(Insert hình files)
+![Files](PMXTResources/files.png)
 
 Mình tiến hành mở .exe lên chơi thử, cách vận hành của game này được lấy ý tưởng từ màn chơi [Perfect Match](https://fallguysultimateknockout.fandom.com/wiki/Perfect_Match) của tựa game Fall Guy.
 
@@ -41,15 +41,15 @@ Sử dụng các tool (dnSpy, dotPeek hay IDA) như trong slide có đề cập 
 
 Sau khi decompile, ban đầu ta sẽ thấy cửa sổ như sau trong dnSpy:
 
-(Insert hình dnspy1)
+![Files](PMXTResources/dnspy1.png)
 
 Ở phía bên trái, ta có một cửa sổ hiển thị danh sách các thành phần của file **Assembly-CSharp.dll**.
 
-(Insert hình dnspy2)
+![Files](PMXTResources/dnspy2.png)
 
 Toàn bộ phần màu xanh chính là các **GameObject** mà mình đã đề cập đến trong slide ở phía trên, trong đó có **GameManager** mà ta có thể nói rằng nó là main để vận hành trò chơi.
 
-(Insert hình dnspy3)
+![Files](PMXTResources/dnspy3.png)
 
 Trên đây là cấu trúc của **GameManager** được decompile thành pseudocode của ngôn ngữ **C#**. Mỗi hàm của **GameManager** đều có một chức năng riêng, như 
 **ChooseBasedOnRound()** là hàm để setup mỗi round, hay **ChooseFruit()** cũng là một hàm để setup platform của màn chơi. Tuy nhiên, ta nhận thấy có một hàm tên là **IncreaseRound()** dùng để kiểm tra tiến độ game mà trong đó ta thấy dòng lệnh **isGameOver = true;**, đây có thể hiểu là câu lệnh dùng để kết thúc game.
@@ -70,11 +70,11 @@ Thử edit module để bỏ dòng lệnh **this.isGameOver = true;** lên trên
 
 **Lưu ý:** Không nên dùng **edit class** để edit, mà dùng **edit module**. Nếu dùng edit class sẽ xảy ra lỗi compile ở các module khác (vì pseudocode được decompile lại thường không đúng hoàn toàn 100% như bản gốc nên sẽ xảy ra thiếu hụt dữ liệu dẫn đến lỗi.
 
-(Insert dnspy4)
+![Files](PMXTResources/dnspy4.png)
 
 Sau khi compile xong, ta tiến hành save module, lưu đè lên file **.dll** gốc (nên backup file **.dll** gốc).
 
-(Insert dnspy5)
+![Files](PMXTResources/dnspy5.png)
 
 Tiếp tục bật game lên chơi thử thôi...
 
@@ -82,15 +82,17 @@ Tiếp tục bật game lên chơi thử thôi...
 
 Tới đây, công đoạn crack cũng gần như xong rồi, chỉ còn tìm cách đọc flag. Ở đây theo mình thì có 2 lựa chọn, một là tìm cách xóa object để đọc flag, hai (cách này hơi unintended) là chỉnh tốc độ và bước nhảy của nhân vật để đọc flag từ các góc khác nhau. Mình đã phá cách và chọn hướng thứ 2.
 
-(Insert dnspy6)
+![Files](PMXTResources/dnspy6.png)
 
 Trong số các **GameObject**, ta có **MoveBehaviour**, trong đó có hàm **MoveBehaviour()** chứa các thông tin của nhân vật. Mình đã chỉnh một số thông số như hình dưới đây:
 
-(Insert dnspy7)
+![Files](PMXTResources/dnspy7.png)
 
 Save module, vào game, canh thời gian nhảy xuống để vừa kịp nhìn flag từ dưới lên mà không bị eliminated do vượt quá độ sâu thấp nhất cho phép.
 
-(Insert flag1,flag2,flag3)
+![Files](PMXTResources/flag1.png)
+![Files](PMXTResources/flag2.png)
+![Files](PMXTResources/flag3.png)
 
 > Flag: SEKAI{F4LL_GUY5_H3CK_15_1LL3G4L}
 
