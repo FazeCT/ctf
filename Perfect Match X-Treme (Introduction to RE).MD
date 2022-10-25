@@ -100,4 +100,4 @@ Trên đây là Write-Up về một bài Unity RE khá thú vị, kiểu challen
 
 Cuối cùng, mình hy vọng qua bài viết trên đây của mình thì hy vọng các bạn (đặc biệt là các bạn sắp tới có dự định theo mảng RE) có một góc nhìn tổng quan về cách thức giải quyết một vấn đề trong mảng Reverse Engineering.
 
-#**YOUR SECURITY, OUR PASSION - BKISC**
+# **YOUR SECURITY, OUR PASSION - BKISC**
