@@ -26,13 +26,13 @@ The **encrypt.js** holds all of the logic of the whole encrypting system. After 
 
 At this point, I knew that this 'encoding system' is using **RSA encryption**.
 
-- Function 'u(A)' is used to concatenate a list of numbers into a single big number, using shift left logical of 8.
+- Function u(A) is used to concatenate a list of numbers into a single big number, using shift left logical of 8.
 
-- Funtion 'w(A, B, C)' is used to calculate A ** B, modulo C.
+- Funtion w(A, B, C) is used to calculate A ** B, modulo C.
 
-- Array 'y' contains parts of x using shift right logical of 8.
+- Array y contains parts of x using shift right logical of 8.
 
-- Variable s, k, j are appended to the end of the array 'y'. (This is very crucial for solving this challenge).
+- Variable s, k, j are appended to the end of the array y (This is very crucial for solving this challenge).
 
 - Last part is just a simple XOR encryption with key = 'acscpass', then the string is reversed and base-64 encoded before being printed out as ciphertext.
 
