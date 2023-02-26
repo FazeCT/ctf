@@ -16,7 +16,7 @@ MTE3LDk2LDk4LDEwNyw3LDQzLDIyMCwyMzMsMTI2LDEzMSwyMDEsMTUsMjQ0LDEwNSwyNTIsMTI1LDEw
 
 ## Solution
 
-The encrypt.js holds all of the logic of the whole encrypting system. After changing some of the number obfuscation, I immediately realize the flow of the function 'b(d,f)' like so:
+The encrypt.js holds all of the logic of the whole encrypting system. After changing some of the number obfuscation, I immediately realized that the flow of the function 'b(d,f)' was like so:
 
 - First, it receives our message as d and our password 'acscpass' as f.
 
