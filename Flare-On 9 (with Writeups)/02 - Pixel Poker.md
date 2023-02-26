@@ -48,7 +48,7 @@ Quay trở lại với hàm **sub_401040()** - nơi result được trả về, 
 ![401040](Images/image_2022-10-01_162015754.png)
 
 Từ đó ta có được tọa độ của vị trí cần click trong .exe để pass Challenge này.
-```
+```python
 data = 0x52414C46
 data1 = 0x6E4F2D45
 print(int(str(data)) % 741)
