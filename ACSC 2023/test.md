@@ -16,7 +16,7 @@ MTE3LDk2LDk4LDEwNyw3LDQzLDIyMCwyMzMsMTI2LDEzMSwyMDEsMTUsMjQ0LDEwNSwyNTIsMTI1LDEw
 
 ## Solution
 
-The encrypt.js holds all of the logic of the whole encrypting system. After changing some of the number obfuscation, I immediately realized that the flow of the function 'b(d,f)' was like so:
+The **encrypt.js** holds all of the logic of the whole encrypting system. After changing some of the number obfuscation, I immediately realized that the flow of the function 'b(d,f)' was like so:
 
 - First, it receives our message as d and our password 'acscpass' as f.
 
@@ -24,7 +24,7 @@ The encrypt.js holds all of the logic of the whole encrypting system. After chan
 
 - Variable t would be one of these numbers: 3 5 17 257 65537.
 
-At this point, I knew that this 'encoding system' is using RSA encryption.
+At this point, I knew that this 'encoding system' is using **RSA encryption**.
 
 - Function 'u(A)' is used to concatenate a list of numbers into a single big number, using shift left logical of 8.
 
