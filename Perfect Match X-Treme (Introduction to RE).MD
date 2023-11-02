@@ -33,7 +33,7 @@ Như đã đề cập đến trong slide phía trên, 2 folder sẽ chứa tài 
 
 Mình tiến hành mở .exe lên chơi thử, cách vận hành của game này được lấy ý tưởng từ màn chơi [Perfect Match](https://fallguysultimateknockout.fandom.com/wiki/Perfect_Match) của tựa game Fall Guy.
 
-(chỗ này quăng cái clip pmxt.mp4 trong /PMXTResources)
+Video: https://drive.google.com/file/d/18JScEy6ws-ibVz72WgGwoaIOVygBESro/view?usp=sharing
 
 Để có được flag, ta cần vượt qua màn chơi này mà không bị rơi xuống phía dưới.
 
@@ -82,7 +82,7 @@ Sau khi compile xong, ta tiến hành save module, lưu đè lên file **.dll** 
 
 Tiếp tục bật game lên chơi thử thôi...
 
-(chỗ này quăng cái clip pmxt2.mp4 trong /PMXTResources)
+Video: https://drive.google.com/file/d/15fVhAw2kZCJ4CfsfwIBEtDRv88ZTTnpy/view?usp=sharing
 
 Tới đây, công đoạn crack cũng gần như xong rồi, chỉ còn tìm cách đọc flag. Ở đây theo mình thì có 2 lựa chọn, một là tìm cách xóa object để đọc flag, hai (cách này hơi unintended) là chỉnh tốc độ và bước nhảy của nhân vật để đọc flag từ các góc khác nhau. Mình đã phá cách và chọn hướng thứ 2.
 
