@@ -19,7 +19,9 @@ Reverse Engineering | FazeCT
 
 [...] Giành chiến thắng trong trò chơi mô phỏng lại dựa trên tựa game [Fall Guy](https://vi.wikipedia.org/wiki/Fall_Guys).
 
-(chỗ này quăng cái link zip, pass: bkisc)
+File: https://drive.google.com/drive/folders/1c2-aDuKIVexttTzI74flcsTOAZi8AQPQ?usp=sharing
+
+Password: BKISC
 
 ## First Observation
 
