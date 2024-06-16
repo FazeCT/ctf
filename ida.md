@@ -74,7 +74,12 @@ From left to right:
 
 ![image](https://github.com/FazeCT/ctf/assets/110371121/f18814e6-97e0-4744-bd33-6cc63bf0e319)
 
+8d. Go to **Edit > Segment > Rebase program** and set the value to `0` to get rid of the base addresses.
+
+![image](https://github.com/FazeCT/ctf/assets/110371121/172b5914-0feb-4db8-a2b7-cec3f9e6b4d9)
+
 9. To be updated...
+
 
 
 
